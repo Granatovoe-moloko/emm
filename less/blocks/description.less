@@ -1,0 +1,115 @@
+.description {
+    padding: 30px 10px 20px 10px;
+}
+
+.description__heading {
+    margin: 0 auto;
+    margin-bottom: 33px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.description__text {
+    margin: 0 auto;
+    margin-bottom: 26px;
+}
+
+.description__list {
+    list-style: none;
+    padding: 0;
+}
+
+.description__item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-column-gap: 17px;
+}
+
+.description__item-quantity {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: right;
+    color: @gold;
+}
+
+.description__item-quantity-lower {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: @gold;
+}
+
+.description__item-text {
+    margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+    .description {
+        padding: 70px 40px 28px 40px;
+    }
+
+    .description__heading {
+        margin-bottom: 37px;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: left;
+    }
+    
+    .description__text {
+        margin-bottom: 26px;
+    }
+
+    .description__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .description__item  {
+        width: 33.3%;
+        padding-right: 20px;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .description__item-quantity {
+        font-size: 72px;
+        line-height: 88px;
+        text-align: left;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .description {
+        padding: 70px 316px;
+    }
+
+    .description__heading {
+        margin-bottom: 39px;
+        font-size: 48px;
+        line-height: 59px;
+    }
+    
+    .description__text {
+        margin-bottom: 50px;
+    }
+
+    .description__list {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .description__item  {
+        width: 20%;
+        margin-bottom: 80px;
+    }
+
+    .description__item-quantity {
+        font-size: 80px;
+        line-height: 98px;
+    }
+}

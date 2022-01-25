@@ -1,0 +1,122 @@
+.other-equipment {
+    padding: 20px;
+}
+
+.other-equipment__heading {
+    margin: 0 auto;
+    margin-bottom: 28px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.other-equipment__card {
+    .sizes(100%; auto);
+    position: relative;
+    margin-bottom: 23px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: @shadow;
+    }
+}
+
+.other-equipment__name {
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: @white;
+    position: absolute;
+    top: 17px;
+    left: 16px;
+    z-index: 1;
+}
+
+.other-equipment__image {
+    .sizes(100%; 100%);
+    display: block;
+}
+
+.other-equipment__link {
+    cursor: pointer;
+}
+
+.other-equipment__link::before {
+    content: "";
+    position: absolute;
+    .sizes(39px; 22px);
+    background-image: url(images/arrow.svg);
+    background-repeat: no-repeat;
+    bottom: 21px;
+    left: 16px;
+    z-index: 1;
+    transform: rotate(180deg);
+}
+
+@media (min-width: @tablet-width) {
+    .other-equipment {
+        padding: 0 40px 20px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+    }
+    
+    .other-equipment__heading {
+        width: 100%;
+        margin-bottom: 35px;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: left;
+    }
+    
+    .other-equipment__card {
+        .sizes(48.5%; auto);
+        margin-bottom: 42px;
+    }
+    
+    .other-equipment__name {
+        top: 21px;
+    }
+    
+    .other-equipment__link::before {
+            bottom: 19px;
+    }
+
+    
+}
+
+@media (min-width: @desktop-width) {
+    .other-equipment {
+        padding: 0 315px 62px 315px;
+        column-gap: 30px;
+    }
+    
+    .other-equipment__heading {
+        margin-bottom: 45px;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    .other-equipment__card {
+        .sizes(48.8%; auto);
+        margin-bottom: 62px;
+    }
+    
+    .other-equipment__name {
+        top: 27px;
+        font-size: 22px;
+        line-height: 27px;
+    }
+    
+    .other-equipment__link::before {
+            bottom: 36px;
+            left: 27px;
+    }
+}

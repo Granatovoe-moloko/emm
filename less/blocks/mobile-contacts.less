@@ -1,0 +1,40 @@
+.mobile-contacts__phone {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.mobile-contacts__mail {
+    margin: 0;  
+    margin-bottom: 30px;  
+}
+
+.mobile-contacts__mail-link {
+    text-decoration: none;
+    color: @green;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: @gold;
+    }
+}
+
+.mobile-contacts__working {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@media (min-width: @desktop-width) {
+    .mobile-contacts {
+        display: none;
+    }
+}
+

@@ -1,0 +1,151 @@
+.services {
+    padding: 0 20px 20px 20px;
+}
+
+.services__heading {
+    margin: 0 auto;
+    margin-bottom: 26px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.services__card {
+    margin-bottom: 28px;
+}
+
+.services__image-wrapper {
+    margin-bottom: 24px;
+    position: relative;
+
+    
+
+    &--1::after {
+        content: "01";
+    }
+
+    &--2::after {
+        content: "02";
+    }
+
+    &--3::after {
+        content: "03";
+    }
+
+    &--4::after {
+        content: "04";
+    }
+
+    &--1::after,
+    &--2::after,
+    &--3::after,
+    &--4::after {
+        position: absolute;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: @white-50;
+        right: 15px;
+        bottom: 11px;
+    }
+}
+
+.services__image {
+    .sizes(100%; auto);
+    display: block;
+}
+
+.services__link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: @green;
+    margin-bottom: 22px;
+    display: block;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: @gold;
+    }
+}
+
+.services__text{
+    margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+    .services {
+        padding: 0 40px 45px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+    }
+    
+    .services__heading {
+        width: 100%;
+        margin-bottom: 26px;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: left;
+    }
+    
+    .services__card {
+        .sizes(48.5%; auto);
+        margin-bottom: 40px;
+    }
+
+    .services__image-wrapper {
+        margin-bottom: 25px;
+    }
+    
+    .services__image {
+        min-height: 127px;
+    }
+    
+    .services__text{
+        margin: 0;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .services {
+        padding: 0 315px 67px 315px;
+        column-gap: 30px;
+    }
+    
+    .services__heading {
+        margin-bottom: 35px;
+        font-size: 40px;
+        line-height: 49px;
+    }
+    
+    .services__card {
+        .sizes(48.8%; auto);
+        margin-bottom: 55px;
+    }
+    
+    .services__image-wrapper {
+        margin-bottom: 31px;
+
+        &--1::after,
+        &--2::after,
+        &--3::after,
+        &--4::after {
+            font-size: 72px;
+            line-height: 88px;
+        }
+    }
+
+    .services__link {
+        font-size: 22px;
+        line-height: 27px;
+    }
+    
+    .services__text{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

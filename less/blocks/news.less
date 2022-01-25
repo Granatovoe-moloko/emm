@@ -1,0 +1,148 @@
+.news {
+    padding: 20px;
+}
+
+.news__heading {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.news__button {
+    display: none;
+}
+
+.news__card {
+    display: none;
+    flex-direction: column;
+}
+
+.news__card--visible {
+    display: flex;
+}
+
+.news__image {
+    .sizes(100%; auto);
+    margin-bottom: 32px;
+}
+
+.news__link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: @green;
+    margin-bottom: 18px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: @gold;
+    }
+}
+
+.news__date {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: @light-gold;
+    margin-bottom: 15px;
+}
+
+.news__text {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+    .news {
+        padding:  0 40px 60px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+    }
+    
+    .news__heading {
+        width: calc(100% - 190px);
+        font-size: 30px;
+        line-height: 37px;
+        text-align: left;
+        margin-bottom: 36px;
+    }
+
+    .news__button {
+        display: block;
+        background-color: transparent;
+        border: none;
+        .sizes(62px; 39px);
+        cursor: pointer;
+        position: relative;
+
+        &--back {
+            margin-right: 5px;
+        }
+        
+    
+        &::before {
+            content: "";
+            background-image: url(images/news-arrow.svg);
+            background-repeat: no-repeat;
+            .sizes(62px; 39px);
+            position: absolute;
+        }
+
+        &--back::before {
+            bottom: 0px;
+            left: 0px;
+        }
+
+        &--forward::before {
+            bottom: 0px;
+            left: 0px;
+            transform: rotate(180deg);
+        }
+    }
+    
+    .news__card {
+        width: 48.5%;
+    }
+    
+    .news__image {
+        .sizes(100%; auto);
+    }
+    
+    .news__text {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .news {
+        padding:  0 315px 120px 315px;
+        column-gap: 30px;
+    }
+    
+    .news__heading {
+        font-size: 40px;
+        line-height: 49px;
+        margin-bottom: 44px;
+    }
+    
+    .news__card {
+        width: 31.7%;
+    }
+    
+    .news__text {
+        font-size: 16px;
+    }
+
+    .news__link {
+        font-size: 22px;
+        line-height: 27px;
+    }
+}
