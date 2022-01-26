@@ -518,6 +518,10 @@ body {
   text-decoration: none;
   color: #222222;
 }
+.menu__link:hover,
+.menu__link:focus {
+  color: #CDBD84;
+}
 .menu__button-close {
   width: 21px;
   height: 20px;
@@ -885,6 +889,10 @@ body {
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
+  }
+  .lead__link:hover,
+  .lead__link:focus {
+    color: #CDBD84;
   }
   .lead__heading {
     font-size: 108px;
@@ -1591,6 +1599,11 @@ body {
   line-height: 24px;
   color: #FFFFFF;
 }
+.feedback__form input:focus,
+.feedback__form input:active {
+  border: 2px solid #CDBD84;
+  outline: none;
+}
 .feedback__form textarea {
   width: 100%;
   height: 105px;
@@ -1603,6 +1616,11 @@ body {
   line-height: 24px;
   color: #FFFFFF;
   margin-bottom: 20px;
+}
+.feedback__form textarea:focus,
+.feedback__form textarea:active {
+  border: 2px solid #CDBD84;
+  outline: none;
 }
 .feedback__text {
   text-align: center;
