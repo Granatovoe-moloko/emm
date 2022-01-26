@@ -1,5 +1,5 @@
 .services {
-    padding: 0 20px 20px 20px;
+    padding: 0 20px 0 20px;
 }
 
 .services__heading {
@@ -12,7 +12,7 @@
 }
 
 .services__card {
-    margin-bottom: 28px;
+    margin-bottom: 41px;
 }
 
 .services__image-wrapper {
@@ -62,7 +62,7 @@
     font-size: 18px;
     line-height: 22px;
     color: @green;
-    margin-bottom: 22px;
+    margin-bottom: 15px;
     display: block;
 
     &:hover,
@@ -78,7 +78,7 @@
 
 @media (min-width: @tablet-width) {
     .services {
-        padding: 0 40px 45px 40px;
+        padding: 0 40px 10px 40px;
         display: flex;
         flex-wrap: wrap;
         column-gap: 20px;
@@ -86,7 +86,7 @@
     
     .services__heading {
         width: 100%;
-        margin-bottom: 26px;
+        margin-bottom: 32px;
         font-size: 30px;
         line-height: 37px;
         text-align: left;
@@ -105,19 +105,25 @@
         min-height: 127px;
     }
     
+    .services__link {
+        margin-bottom: 10px;
+    }
+
     .services__text{
         margin: 0;
+        font-size: 14px;
+        line-height: 24px;
     }
 }
 
 @media (min-width: @desktop-width) {
     .services {
-        padding: 0 315px 67px 315px;
+        padding: 0 315px 5px 315px;
         column-gap: 30px;
     }
     
     .services__heading {
-        margin-bottom: 35px;
+        margin-bottom: 45px;
         font-size: 40px;
         line-height: 49px;
     }
@@ -136,12 +142,14 @@
         &--4::after {
             font-size: 72px;
             line-height: 88px;
+            right: 33px;
         }
     }
 
     .services__link {
         font-size: 22px;
         line-height: 27px;
+        margin-bottom: 25px;
     }
     
     .services__text{

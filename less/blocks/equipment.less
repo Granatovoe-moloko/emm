@@ -1,5 +1,5 @@
 .equipment{
-    padding: 10px 20px 30px 20px;
+    padding: 5px 20px 25px 20px;
 }
 
 .equipment__heading {
@@ -46,23 +46,34 @@
 
 .equipment__link {
     cursor: pointer;
+
+    &::before {
+        content: "";
+        position: absolute;
+        .sizes(39px; 22px);
+        background-image: url(images/arrow.svg);
+        background-repeat: no-repeat;
+        bottom: 35px;
+        left: 24px;
+        z-index: 1;
+        transform: rotate(180deg);
+    }
+
+    &:hover::before,
+    &:focus::before {
+        transform: rotate(180deg) scale(1.2);
+    }
+
+    &:active::before {
+        transform: rotate(180deg) scale(0.7);
+    }
 }
 
-.equipment__link::before {
-    content: "";
-    position: absolute;
-    .sizes(39px; 22px);
-    background-image: url(images/arrow.svg);
-    background-repeat: no-repeat;
-    bottom: 35px;
-    left: 24px;
-    z-index: 1;
-    transform: rotate(180deg);
-}
+
 
 @media (min-width: @tablet-width) {
     .equipment {
-        padding: 0 40px 56px 40px;
+        padding: 0 40px 35px 40px;
         display: flex;
         column-gap: 18px;
         flex-wrap: wrap;
@@ -79,6 +90,7 @@
     .equipment__card {
         .sizes(31.5%; auto);
         box-sizing: border-box;
+        margin-bottom: 22px;
     }
 
     .equipment__name {
@@ -97,7 +109,7 @@
 
 @media (min-width: @desktop-width) {
     .equipment {
-        padding: 0 315px 75px 315px;
+        padding: 0 315px 45px 315px;
         column-gap: 30px;
     }
 
@@ -109,6 +121,7 @@
 
     .equipment__card {
         .sizes(23.2%; auto);
+        margin-bottom: 30px;
     }
 
     .equipment__name {

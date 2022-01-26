@@ -3,7 +3,7 @@
 }
 
 .footer__contacts {
-    padding: 81px 20px 46px 20px;
+    padding: 81px 20px 46px 25px;
     background-color: @light-yellow;
     border-bottom: 1px solid @milk-gray;
 }
@@ -14,7 +14,7 @@
 
 .footer__info-text {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     line-height: 30px;
     text-align: center;
 }
@@ -24,7 +24,7 @@
     position: relative;
 
     &:not(:last-of-type) {
-        margin-bottom: 60px;
+        margin-bottom: 65px;
     }
 
     &::before {
@@ -52,11 +52,11 @@
 @media (min-width: @tablet-width) {
 
     .footer__contacts {
-        padding: 65px 90px 55px 90px;
+        padding: 65px 40px 75px 70px;
     }
 
     .footer__contacts-wrapper {
-        max-width: 600px;
+        max-width: 640px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -65,13 +65,17 @@
     }
 
     .footer__info {
-        padding: 36px 40px 55px 40px;
+        padding: 28px 40px 55px 40px;
     }
 
     .footer__contacts-text {
         text-align: left;
         font-size: 14px;
         line-height: 24px;
+
+        &:not(:last-of-type) {
+            margin-bottom: 35px;
+        }
 
         &::before {
             top: 5px;
@@ -102,6 +106,7 @@
     
     .footer__info-text {
         font-size: 14px;
+        margin-bottom: 7px;
     }
 }
 
@@ -116,7 +121,7 @@
 
     .footer__menu-inner {
         height: 217px;
-        max-width: 1290px;
+        max-width: 1420px;
         margin: 0 auto;
         display: flex;
     }
@@ -148,14 +153,14 @@
     }
 
     .footer__contacts { 
-        padding: 80px 315px 50px 315px;
+        padding: 65px 315px 25px 315px;
     }
 
     .footer__contacts-wrapper {
         margin: 0 auto;
-        max-width: 1250px;
+        max-width: 1290px;
         display: flex;
-        column-gap: 110px;
+        column-gap: 145px;
     }
 
     .footer__contacts-text {
@@ -182,14 +187,18 @@
 
     .footer__info-wrapper {
         margin: 0 auto;
-        max-width: 1250px;
+        max-width: 1290px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        column-gap: 120px;
     }
 
     .footer__info-text {
         font-size: 16px;
         max-width: 330px;
+
+        &:nth-of-type(2) {
+            padding-left: 80px;;
+        }
     }
 }

@@ -1,5 +1,5 @@
 .description {
-    padding: 30px 10px 20px 10px;
+    padding: 45px 10px 20px 10px;
 }
 
 .description__heading {
@@ -19,12 +19,14 @@
 .description__list {
     list-style: none;
     padding: 0;
+    margin-top: 55px;
 }
 
 .description__item {
     display: grid;
     grid-template-columns: 120px 1fr;
     grid-column-gap: 17px;
+    margin-top: 25px;
 }
 
 .description__item-quantity {
@@ -48,7 +50,7 @@
 
 @media (min-width: @tablet-width) {
     .description {
-        padding: 70px 40px 28px 40px;
+        padding: 65px 39px 28px 40px;
     }
 
     .description__heading {
@@ -60,20 +62,29 @@
     
     .description__text {
         margin-bottom: 26px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 
     .description__list {
         display: flex;
         flex-wrap: wrap;
+        margin-top: 10px;
     }
 
     .description__item  {
-        width: 33.3%;
+        width: 37%;
         padding-right: 20px;
         box-sizing: border-box;
-        margin-bottom: 16px;
+        margin-bottom: 10px;
         display: flex;
         flex-direction: column;
+
+        &:nth-of-type(3n) {
+            width: 26%;
+        }
     }
 
     .description__item-quantity {
@@ -85,7 +96,7 @@
 
 @media (min-width: @desktop-width) {
     .description {
-        padding: 70px 316px;
+        padding: 87px 315px 50px 315px;
     }
 
     .description__heading {
@@ -95,17 +106,32 @@
     }
     
     .description__text {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .description__list {
         display: flex;
         flex-wrap: nowrap;
+        margin-top: 20px;
     }
 
     .description__item  {
         width: 20%;
-        margin-bottom: 80px;
+        margin-bottom: 5px;
+        padding-right: 0;
+        padding-left: 35px;
+
+        &:nth-of-type(3n) {
+            width: 20%;
+        }
+
+        &:nth-of-type(1) {
+            padding-left: 0;
+        }
+
+        &:last-of-type {
+            padding-left: 65px;
+        }
     }
 
     .description__item-quantity {
