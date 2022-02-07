@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru" class="page">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Элеватормельмаш</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="icon" href="favicon.ico">
-    <link href="styles.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
-  <body class="page__body">
-      <header class="header">
-          <button class="header__button-open" type="button" aria-label="открыть меню"></button>
+  <body>
+      <div class="b-header">
+          <button class="header__button-open js-header-button-open" type="button" aria-label="открыть меню"></button>
           <div class="header__logo">
               <a href="#" class="header__logo-link">
                   <picture>
@@ -20,10 +21,10 @@
                   </picture>
               </a>
           </div>
-          <div class="menu menu--nojs">
-            <nav class="menu__navigation">
+          <div class="b-menu js-menu js-menu-nojs">
+            <div class="menu__navigation">
                 <h2 class="menu__heading visually-hidden">Меню сайта</h2>
-                <button class="menu__button-close" type="button" aria-label="закрыть меню"></button>
+                <button class="menu__button-close js-menu-button-close" type="button" aria-label="закрыть меню"></button>
                 <ul class="menu__list">
                     <li class="menu__item">
                         <a href="#" class="menu__link">О компании</a>
@@ -38,8 +39,8 @@
                       <a href="#" class="menu__link">Контакты</a>
                   </li>
                 </ul>
-            </nav>
-            <div class="mobile-contacts">
+            </div>
+            <div class="b-mobile-contacts">
                 <h2 class="mobile-contacts__heading visually-hidden">Наши контакты</h2>
                 <p class="mobile-contacts__phone">8 (86138) 6-34-03, 6-34-06</p>
                 <p class="mobile-contacts__mail">
@@ -64,7 +65,7 @@
           <p class="header__phone">8 (86138) 6-34-03, 6-34-06</p>
           
           
-          <div class="language">
+          <div class="b-language">
               <ul class="language__list">
                   <li class="language__item">
                       <a href="" class="language__item-link language__item-link--active">Ru</a>
@@ -77,10 +78,10 @@
                   <button class="language__switcher-button">Выбор языка</button>
               </div>
             </div>
-      </header>
+        </div>
 
-      <main class="main">
-          <section class="lead">
+      <div class="b-main">
+          <div class="b-lead">
               <div class="lead__wrapper">
                   <div class="lead__menu-wrapper">
                       <ul class="lead__menu">
@@ -115,9 +116,9 @@
                   <button class="lead__button lead__button--back" type="button" aria-label="назад"></button>
                   <button class="lead__button lead__button--forward" type="button" aria-label="вперед"></button>
               </div>
-          </section>
+          </div>
 
-          <section class="description">
+          <div class="b-description">
               <h2 class="description__heading">Продукция для аграрной промышленности</h2>
               <p class="description__text">АО "Элеватормельмаш" г. Кропоткин на протяжении 75 лет является крупнейшим поставщиком продукции для агропромышленного комплекса России и ближнего зарубежья.<br>
                 Предприятие выпускает большой спектр оборудования в которые входит: элеваторное оборудование, промышленные котлы, бетоносмесители, металлоконструкции и металлические формы для свай.
@@ -145,88 +146,88 @@
                       <p class="description__item-text">регионов поставки продукции</p>
                 </li>
               </ul>
-          </section>
+          </div>
 
-          <section class="equipment">
+          <div class="b-equipment">
               <h2 class="equipment__heading">Элеваторное оборудование</h2>
-              <article class="equipment__card equipment__card--1">
+              <div class="equipment__card equipment__card--1">
                   <h3 class="equipment__name">Автомобиле-<br>
                     разгрузчики</h3>
                   <a href="#" class="equipment__link">
                       <img class="equipment__image" src="images/equipments/equipment1.jpg" srcset="images/equipments/equipment1@2x.jpg 2x" alt="изображение для блока Автомобилеразгрузчики">
                   </a>
-              </article>
-              <article class="equipment__card equipment__card--2">
+              </div>
+              <div class="equipment__card equipment__card--2">
                 <h3 class="equipment__name">Конвейеры</h3>
                 <a href="#" class="equipment__link">
                     <img class="equipment__image" src="images/equipments/equipment2.jpg" srcset="images/equipments/equipment2@2x.jpg 2x" alt="изображение для блока Конвейеры">
                 </a>
-            </article>
-            <article class="equipment__card equipment__card--3">
+            </div>
+            <div class="equipment__card equipment__card--3">
                 <h3 class="equipment__name">Пробоотборники</h3>
                 <a href="#" class="equipment__link">
                     <img class="equipment__image" src="images/equipments/equipment3.jpg" srcset="images/equipments/equipment3@2x.jpg 2x" alt="изображение для блока Пробоотборники">
                 </a>
-            </article>
-            <article class="equipment__card equipment__card--4">
+            </div>
+            <div class="equipment__card equipment__card--4">
                 <h3 class="equipment__name">Циклоны</h3>
                 <a href="#" class="equipment__link">
                     <img class="equipment__image" src="images/equipments/equipment4.jpg" srcset="images/equipments/equipment4@2x.jpg 2x" alt="изображение для блока Циклоны">
                 </a>
-            </article>
-            <article class="equipment__card equipment__card--5">
+            </div>
+            <div class="equipment__card equipment__card--5">
                 <h3 class="equipment__name">Нории</h3>
                 <a href="#" class="equipment__link">
                     <img class="equipment__image" src="images/equipments/equipment5.jpg" srcset="images/equipments/equipment5@2x.jpg 2x" alt="изображение для блока Нории">
                 </a>
-            </article>
-            <article class="equipment__card equipment__card--6">
+            </div>
+            <div class="equipment__card equipment__card--6">
                 <h3 class="equipment__name">Переработка <br>маслосемян</h3>
                 <a href="#" class="equipment__link">
                     <img class="equipment__image" src="images/equipments/equipment6.jpg" srcset="images/equipments/equipment6@2x.jpg 2x" alt="изображение для блока Переработка маслосемян">
                 </a>
-            </article>
-            <article class="equipment__card equipment__card--7">
+            </div>
+            <div class="equipment__card equipment__card--7">
                 <h3 class="equipment__name">Клапаны</h3>
                 <a href="#" class="equipment__link">
                     <img class="equipment__image" src="images/equipments/equipment7.jpg" srcset="images/equipments/equipment7@2x.jpg 2x" alt="изображение для блока Клапаны">
                 </a>
-            </article>
-            <article class="equipment__card equipment__card--8">
+            </div>
+            <div class="equipment__card equipment__card--8">
                 <h3 class="equipment__name">Задвижки <br>реечные</h3>
                 <a href="#" class="equipment__link">
                     <img class="equipment__image" src="images/equipments/equipment8.jpg" srcset="images/equipments/equipment8@2x.jpg 2x" alt="изображение для блока Задвижки реечные">
                 </a>
-            </article>
-            <article class="equipment__card equipment__card--9">
+            </div>
+            <div class="equipment__card equipment__card--9">
                 <h3 class="equipment__name">Тележка <br>сбрасывающая</h3>
                 <a href="#" class="equipment__link">
                     <img class="equipment__image" src="images/equipments/equipment9.jpg" srcset="images/equipments/equipment9@2x.jpg 2x" alt="изображение для блока Тележка сбрасывающая">
                 </a>
-            </article>
-            <article class="equipment__card equipment__card--10">
+            </div>
+            <div class="equipment__card equipment__card--10">
                 <h3 class="equipment__name">Шлюзовый <br>затвор</h3>
                 <a href="#" class="equipment__link">
                     <img class="equipment__image" src="images/equipments/equipment10.jpg" srcset="images/equipments/equipment10@2x.jpg 2x" alt="изображение для блока Шлюзовый затвор">
                 </a>
-            </article>
-            <article class="equipment__card equipment__card--11">
+            </div>
+            <div class="equipment__card equipment__card--11">
                 <h3 class="equipment__name">Затвор <br>огнепреграждающий</h3>
                 <a href="#" class="equipment__link">
                     <img class="equipment__image" src="images/equipments/equipment11.jpg" srcset="images/equipments/equipment11@2x.jpg 2x" alt="изображение для блока Затвор огнепреграждающий">
                 </a>
-            </article>
-            <article class="equipment__card equipment__card--12">
+            </div>
+            <div class="equipment__card equipment__card--12">
                 <h3 class="equipment__name">Устройство <br>загрузки вагонов</h3>
                 <a href="#" class="equipment__link">
                     <img class="equipment__image" src="images/equipments/equipment12.jpg" srcset="images/equipments/equipment12@2x.jpg 2x" alt="изображение для блока Устройство загрузки вагонов">
                 </a>
-            </article>
-          </section>
+            </div>
+          </div>
 
-          <section class="other-equipment">
+          <div class="b-other-equipment">
               <h2 class="other-equipment__heading">Другое оборудование</h2>
-              <article class="other-equipment__card">
+              <div class="other-equipment__card">
                 <h3 class="other-equipment__name">Котлы</h3>
                 <a href="#" class="other-equipment__link">
                     <picture>
@@ -234,8 +235,8 @@
                         <img class="other-equipment__image" src="images/equipments/other-equipment1.jpg" srcset="images/equipments/other-equipment1@2x.jpg 2x" alt="изображение для блока Котлы">
                     </picture>  
                 </a>
-            </article>
-            <article class="other-equipment__card">
+            </div>
+            <div class="other-equipment__card">
                 <h3 class="other-equipment__name">Дополнительное оборудование</h3>
                 <a href="#" class="other-equipment__link">
                     <picture>
@@ -243,17 +244,17 @@
                         <img class="other-equipment__image" src="images/equipments/other-equipment2.jpg" srcset="images/equipments/other-equipment2@2x.jpg 2x" alt="изображение для блока Дополнительное оборудование">
                     </picture>  
                 </a>
-            </article>
-          </section>
+            </div>
+          </div>
 
-          <section class="informaiton">
+          <div class="b-informaiton">
               <p class="informaiton__text">Продукция АО "Элеватормельмаш" используется на предприятиях Юга ,Поволжья и Центральной России, а так же Украины, Казахстана, Молдовы и Белоруссии. Большое количество успешных партнерских отношений подтверждает качество продукции и предоставляемых услуг по установке оборудования и его обслуживанию.</p>
               <p class="informaiton__text">В 2013 году была проведена крупная модернизация оборудования. Введены в эксплуатацию: станок гидроабразивной резки, четырехволковая машина с ЧПУ и листогибочный станок с ЧПУ.Это сразу позволило на порядок поднять качество выпускаемой продукции , снизить трудоемкость процессов, а так же увеличить ассортимент выпускаемой продукции.</p>
-          </section>
+          </div>
 
-          <section class="services">
+          <div class="b-services">
               <h2 class="services__heading">Услуги компании</h2>
-              <article class="services__card">
+              <div class="services__card">
                   <div class="services__image-wrapper services__image-wrapper--1">
                     <picture>
                         <source media="(min-width: 1920px)" srcset="images/services/services-desktop1.jpg 1x, images/services/services-desktop1@2x.jpg 2x">
@@ -262,8 +263,8 @@
                   </div>
                   <a href="#" class="services__link">Плазменная резка</a>
                   <p class="services__text">Компания АО «Элеватормельмаш» осуществляет литейное производство черных и цветных металлов на профессиональной основе и производит литые детали из чугуна и цветных сплавов по эскизу заказчика.</p>
-              </article>
-              <article class="services__card">
+              </div>
+              <div class="services__card">
                   <div class="services__image-wrapper services__image-wrapper--2">
                     <picture>
                         <source media="(min-width: 1920px)" srcset="images/services/services-desktop2.jpg 1x, images/services/services-desktop2@2x.jpg 2x">
@@ -272,8 +273,8 @@
                   </div>
                   <a href="#" class="services__link">Гидроабразивная резка</a>
                   <p class="services__text">Уникальная технология, которая может производить резку различных материалов, в том числе стекла, пластика, металла и многих других.</p>
-            </article>
-            <article class="services__card">
+            </div>
+            <div class="services__card">
                 <div class="services__image-wrapper services__image-wrapper--3">
                     <picture>
                         <source media="(min-width: 1920px)" srcset="images/services/services-desktop3.jpg 1x, images/services/services-desktop3@2x.jpg 2x">
@@ -282,8 +283,8 @@
                 </div>
                 <a href="#" class="services__link">Изготовление изделий на листогибочном станке с ЧПУ</a>
                 <p class="services__text">Позволяет изготавливать сложные профили, элементов кровли, оконные отливы и т.д. Такой станок незаменим при любых гибочных работах.</p>
-            </article>
-            <article class="services__card">
+            </div>
+            <div class="services__card">
                 <div class="services__image-wrapper services__image-wrapper--4">
                     <picture>
                         <source media="(min-width: 1920px)" srcset="images/services/services-desktop4.jpg 1x, images/services/services-desktop4@2x.jpg 2x">
@@ -292,48 +293,57 @@
                 </div>
                 <a href="#" class="services__link">Производство металлоконструкций</a>
                 <p class="services__text">Металлоконструкции изготавливаются по индивидуальным параметрам с учетом всех пожеланий заказчика</p>
-            </article>
-          </section>
+            </div>
+          </div>
 
-          <section class="news">
-              <h2 class="news__heading">Новости компании</h2>
-              <button class="news__button news__button--back" type="button" aria-label="предыдущая новость"></button>
-              <button class="news__button news__button--forward" type="button" aria-label="следующая новость"></button>
-              <div class="news__card-wrapper">
-                <article class="news__card">
-                    <img src="images/news/news1.jpg"  srcset="images/news/news1@2x.jpg 2x" alt="изображение запасных частей" class="news__image">
-                    <a href="#" class="news__link">Запасные части для пробоотборника</a>
-                    <time class="news__date" datetime="2020-10-14">14.10.2020</time>
-                    <p class="news__text">Заводом Элеватормельмаш (ЭММ) изготовлены и подготовлены к отгрузке запасные отборники для пробоотборника типа У1-УПП для Заказчика из Саратовской области. </p>
-                </article>
-                <article class="news__card">
-                  <img src="images/news/news2.jpg" srcset="images/news/news2@2x.jpg 2x" alt="изображение запасных частей" class="news__image">
-                  <a href="#" class="news__link">Фузоловушка для расширения производства</a>
-                  <time class="news__date"  datetime="2020-10-14">14.10.2020</time>
-                  <p class="news__text">Для увеличения объемов выпускаемой продукции и в целях модернизации производства для одного из маслобойных предприятий республики Башкортостан завод Элеватормельмаш изготовил и отгрузил очередную машину типа МФС.</p>
-                </article>
-                <article class="news__card">
-                  <img src="images/news/news3.jpg" srcset="images/news/news3@2x.jpg 2x" alt="изображение запасных частей" class="news__image">
-                  <a href="#" class="news__link">Произведена мультимодальная отгрузка котлов</a>
-                  <time class="news__date"  datetime="2020-10-14">14.10.2020</time>
-                  <p class="news__text">Мы произвели и отгрузили очередную партию промышленных котлов. Данная отгрузка была необчной, а мультимодальная (авто-, ж.д. контейнер, морской паром). </p>
-                </article>
-                <article class="news__card">
-                    <img src="images/news/news1.jpg"  srcset="images/news/news1@2x.jpg 2x" alt="изображение запасных частей" class="news__image">
-                    <a href="#" class="news__link">Запасные части для пробоотборника</a>
-                    <time class="news__date"  datetime="2020-10-14">14.10.2020</time>
-                    <p class="news__text">Заводом Элеватормельмаш (ЭММ) изготовлены и подготовлены к отгрузке запасные отборники для пробоотборника типа У1-УПП для Заказчика из Саратовской области. </p>
-                </article>
-                <article class="news__card">
-                    <img src="images/news/news2.jpg" srcset="images/news/news2@2x.jpg 2x" alt="изображение запасных частей" class="news__image">
-                    <a href="#" class="news__link">Фузоловушка для расширения производства</a>
-                    <time class="news__date"  datetime="2020-10-14">14.10.2020</time>
-                    <p class="news__text">Для увеличения объемов выпускаемой продукции и в целях модернизации производства для одного из маслобойных предприятий республики Башкортостан завод Элеватормельмаш изготовил и отгрузил очередную машину типа МФС.</p>
-                  </article>
-              </div>
-          </section>
+          <div class="b-news">
+            <div class="swiper js-swiper">
+                <h2 class="news__heading">Новости компании</h2>
+                <div class="swiper-button-prev news__button news__button--back"><button class="" type="button" aria-label="предыдущая новость"></button></div>
+                <div class="swiper-button-next news__button news__button--forward"><button class="" type="button" aria-label="следующая новость"></button></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper news__card-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide news__card js-news-card">
+                        <img src="images/news/news1.jpg"  srcset="images/news/news1@2x.jpg 2x" alt="изображение запасных частей" class="js-news-image news__image">
+                        <a href="#" class="news__link">Запасные части для пробоотборника</a>
+                        <div class="news__date">14.10.2020</div>
+                        <p class="news__text">Заводом Элеватормельмаш (ЭММ) изготовлены и подготовлены к отгрузке запасные отборники для пробоотборника типа У1-УПП для Заказчика из Саратовской области. </p>                   
+                  </div>
 
-          <section class="feedback">
+                  <div class="swiper-slide news__card js-news-card">                
+                        <img src="images/news/news2.jpg" srcset="images/news/news2@2x.jpg 2x" alt="изображение запасных частей" class="news__image">
+                        <a href="#" class="news__link">Фузоловушка для расширения производства</a>
+                        <div class="news__date">14.10.2020</div>
+                        <p class="news__text">Для увеличения объемов выпускаемой продукции и в целях модернизации производства для одного из маслобойных предприятий республики Башкортостан завод Элеватормельмаш изготовил и отгрузил очередную машину типа МФС.</p>                             
+                  </div>
+                      
+                  <div class="swiper-slide news__card js-news-card">            
+                        <img src="images/news/news3.jpg" srcset="images/news/news3@2x.jpg 2x" alt="изображение запасных частей" class="news__image">
+                        <a href="#" class="news__link">Произведена мультимодальная отгрузка котлов</a>
+                        <div class="news__date">14.10.2020</div>
+                        <p class="news__text">Мы произвели и отгрузили очередную партию промышленных котлов. Данная отгрузка была необчной, а мультимодальная (авто-, ж.д. контейнер, морской паром). </p>                                           
+                  </div>
+
+                  <div class="swiper-slide news__card js-news-card">                   
+                        <img src="images/news/news1.jpg"  srcset="images/news/news1@2x.jpg 2x" alt="изображение запасных частей" class="news__image">
+                        <a href="#" class="news__link">Запасные части для пробоотборника</a>
+                        <div class="news__date">14.10.2020</div>
+                        <p class="news__text">Заводом Элеватормельмаш (ЭММ) изготовлены и подготовлены к отгрузке запасные отборники для пробоотборника типа У1-УПП для Заказчика из Саратовской области. </p>                    
+                  </div>
+
+                  <div class="swiper-slide news__card js-news-card">                   
+                        <img src="images/news/news2.jpg" srcset="images/news/news2@2x.jpg 2x" alt="изображение запасных частей" class="news__image">
+                        <a href="#" class="news__link">Фузоловушка для расширения производства</a>
+                        <div class="news__date">14.10.2020</div>
+                        <p class="news__text">Для увеличения объемов выпускаемой продукции и в целях модернизации производства для одного из маслобойных предприятий республики Башкортостан завод Элеватормельмаш изготовил и отгрузил очередную машину типа МФС.</p>                                       
+                  </div>                
+                </div> 
+            </div>
+          </div>
+        
+
+          <div class="b-feedback">
               <div class="feedback__form-wrapper">
                   <h2 class="feedback__heading">Свяжитесь с нами</h2>
                   <form method="post" action="url" class="feedback__form">
@@ -345,10 +355,10 @@
                       <button class="feedback__button" type="submit">Отправить</button>
                   </form>
               </div>            
-          </section>   
-      </main>
+            </div>   
+        </div>
 
-      <footer class="footer">
+      <div class="b-footer">
           <div class="footer__menu-wrapper">
               <div class="footer__menu-inner">
                 <div class="footer__logo">
@@ -429,7 +439,11 @@
                 <p class="footer__info-text">Политика конфиденциальности</p>
               </div>
           </div>      
-      </footer>
+        </div>
+      
+      <script src="js/jquery-3.6.0.min.js"></script>
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
       <script src="js/script.js"></script>
+      
   </body>
 </html>
