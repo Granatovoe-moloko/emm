@@ -1,13 +1,13 @@
 
 
 const swiper = new Swiper('.js-swiper', {
-    
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
 
-    slidesPerView: 1,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  slidesPerView: 1,
   spaceBetween: 0,
   // Responsive breakpoints
   breakpoints: {
@@ -21,11 +21,10 @@ const swiper = new Swiper('.js-swiper', {
       slidesPerView: 3,
       spaceBetween: 30
     }
-    
-  }
-  });
 
-swiper;
+  }
+});
+
 
 const menu = $('.js-menu');
 const buttonOpen = $('.js-header-button-open');
@@ -35,12 +34,12 @@ const buttonClose = $('.js-menu-button-close');
 
 menu.removeClass('js-menu-nojs');
 
-buttonOpen.on('click', function() {
-    menu.toggleClass('js-menu-opened')
+buttonOpen.on('click', function () {
+  menu.toggleClass('js-menu-opened')
 });
 
-buttonClose.on('click', function() {
-    menu.toggleClass('js-menu-opened');
+buttonClose.on('click', function () {
+  menu.toggleClass('js-menu-opened');
 });
 
 

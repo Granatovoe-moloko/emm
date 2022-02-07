@@ -1,15 +1,19 @@
 .b-informaiton {
     padding: 0 20px;
     padding-bottom: 35px;
-}
 
-.informaiton__text {
-    margin: 0;
-
-    &:nth-child(2) {
-        margin-top: 25px;
+    .informaiton {
+        &__text {
+            margin: 0;
+        
+            &:nth-child(2) {
+                margin-top: 25px;
+            }
+        }
     }
 }
+
+
 
 @media (min-width: @tablet-width) {
     .b-informaiton {
@@ -20,9 +24,11 @@
 @media (min-width: @desktop-width) {
     .b-informaiton {
         padding: 0 315px 75px 315px;
-    }
 
-    .informaiton__text:nth-child(2) {
-        margin-top: 30px;
+        .informaiton {
+            &__text:nth-child(2) {
+                margin-top: 30px;
+            }
+        }
     }
 }
