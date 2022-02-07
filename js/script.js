@@ -1,12 +1,28 @@
 
 
 const swiper = new Swiper('.js-swiper', {
-    slidesPerView: 1,
-    // Navigation arrows
+    
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+
+    slidesPerView: 1,
+  spaceBetween: 0,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 1920px
+    1920: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+    
+  }
   });
 
 swiper;
